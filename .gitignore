@@ -1,0 +1,17 @@
+*
+!Makefile
+!README.md
+!Report/
+!Report/report.tex
+!Report/thuemp.cls
+!Report/report.bib
+!Data/
+!Data/GMR-Plot-01-01-excel.png
+!Data/GMR-Plot-01-02-excel.png
+!Data/GMR-Plot-02-excel.png
+!Data/GMR-Plot-04-01-excel.png
+!Data/GMR-Plot-04-02-excel.png
+!Data/GMR-Plot-05-excel.png
+!.github/
+!.github/workflows/
+!.github/workflows/build.yml

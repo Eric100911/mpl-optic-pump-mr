@@ -1,0 +1,82 @@
+name: Build LaTeX Document
+
+on:
+  push:
+    branches: [ master ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install TeX Live
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y --no-install-recommends apt-utils
+        echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" | sudo debconf-set-selections
+        sudo apt-get install -y \
+          texlive-latex-base \
+          texlive-latex-extra \
+          texlive-fonts-recommended \
+          texlive-fonts-extra \
+          texlive-lang-chinese \
+          texlive-xetex \
+          texlive-science \
+          texlive-pictures \
+          texlive-bibtex-extra \
+          texlive-luatex \
+          biber \
+          fonts-dejavu-core \
+          lmodern \
+          ttf-mscorefonts-installer \
+          fontconfig
+        sudo fc-cache -f -v
+        fc-list | grep "Times New Roman" || true
+
+    - name: Build PDF
+      run: |
+        make all
+
+    - name: Upload PDF artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: pdf-document
+        path: Report/report.pdf
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/v')
+
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Download PDF artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: pdf-document
+        path: ./artifacts
+
+    - name: Create Release and Upload Asset
+      uses: softprops/action-gh-release@v1
+      with:
+        files: ./artifacts/Report/report.pdf
+        name: Release ${{ github.ref_name }}
+        body: |
+          Automatic release for tag ${{ github.ref_name }}
+          
+          This release contains the compiled PDF document.
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
