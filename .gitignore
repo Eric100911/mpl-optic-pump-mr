@@ -6,13 +6,7 @@
 !Report/thuemp.cls
 !Report/report.bib
 !Data/
-!Data/plot_optical_pumping.py 
-!Data/GMR-Plot-01-01-excel.png
-!Data/GMR-Plot-01-02-excel.png
-!Data/GMR-Plot-02-excel.png
-!Data/GMR-Plot-04-01-excel.png
-!Data/GMR-Plot-04-02-excel.png
-!Data/GMR-Plot-05-excel.png
+!Data/plot_optical_pumping.py
 !.github/
 !.github/workflows/
 !.github/workflows/build.yml
