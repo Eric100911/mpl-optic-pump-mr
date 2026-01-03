@@ -41,7 +41,7 @@ jobs:
 
     - name: Build PDF
       run: |
-        make all
+        make report
 
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v4
