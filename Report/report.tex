@@ -1,5 +1,5 @@
-\documentclass[draft]{Report/thuemp}
-% \documentclass{Report/thuemp}
+% \documentclass[draft]{Report/thuemp}
+\documentclass{Report/thuemp}
 \begin{document}
 
 % User-defined symbols
@@ -12,53 +12,67 @@
 
 % 标题，作者
 \emptitle{光泵磁共振}
-\empauthor{你的姓名}{你的学号} 
+\empauthor{王驰}{王秀凤} 
 
 % 奇数页页眉
-\fancyhead[CO]{{\footnotesize 你的姓名: 光泵磁共振}}
+\fancyhead[CO]{{\footnotesize 王驰: 光泵磁共振}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 关键词 摘要 首页脚注
 %%%%%%%%关键词
-\Keyword{光抽运，磁共振，塞曼分裂，朗德因子，地磁场}
+\Keyword{光抽运，磁共振，超精细结构，塞曼分裂，朗德因子，地磁场}
 \twocolumn[
 \begin{@twocolumnfalse}
 \maketitle
 
 %%%%%%%%摘要
 \begin{empAbstract}
-本实验利用光抽运技术，通过圆偏振的 $D_1$ 光与铷（Rb）原子相互作用，实现了原子在基态塞曼子能级上的粒子数偏极化，并观测到了光抽运信号。实验首先通过调节水平和竖直的补偿磁场，抵消了地磁场的影响，测量并分析了光抽运信号强度随磁场变化的规律，从而测定了地磁场的竖直分量及水平分量。在此基础上，施加频率为 $600\ \mathrm{kHz}$ 的射频场，在满足磁共振条件时诱导原子在塞曼子能级间跃迁，破坏偏极化状态，从而观测到磁共振信号。通过扫场法精确测量了 $\RbEightyFive$ 和 $\RbEightySeven$ 同位素发生磁共振时的共振磁场，计算得到其朗德 $g_F$ 因子分别为 $0.334$ 和 $0.501$（此处请填入你的实际实验值），与理论值符合较好。实验结果直观展示了光与原子相互作用的量子特性以及利用光探测技术进行微弱信号检测的高灵敏度。
+本实验基于 Alfred Kastler 提出的光抽运原理，利用圆偏振光与原子的角动量交换，研究了铷原子（Rb）的超精细结构与磁共振现象。实验通过 $\sigma^+$ 圆偏振的 $D_1$ 光将铷原子“抽运”至基态极高磁量子数能级，建立了非热平衡的粒子数偏极化状态。利用零磁场下能级简并导致的偏极化破坏效应，结合扫场方法精确测定了实验室环境地磁场（垂直分量 $6.99 \times 10^{-5}\ \mathrm{T}$，水平分量 $3.0 \times 10^{-5}\ \mathrm{T}$）。在此基础上，施加 $615.3\ \mathrm{kHz}$ 射频场，观测到了 $\RbEightyFive$ 和 $\RbEightySeven$ 破坏偏极化状态所产生的磁共振信号。通过对称测量法消除地磁场影响，测得 $\RbEightyFive$ 和 $\RbEightySeven$ 的朗德 $g_F$ 因子分别为 $0.338$ 和 $0.510$，与理论值（$1/3$ 和 $1/2$）吻合良好，验证了偏极化状态的形成。实验结果不仅验证了光抽运作为一种“选态”和“检态”手段的高灵敏度，也直观展示了角动量守恒在光-原子相互作用中的核心地位。
 \end{empAbstract}
+
+% 备选的摘要
+
+% 本实验基于 Alfred Kastler 提出的光抽运原理，利用圆偏振光与原子的角动量交换，研究了铷原子（Rb）的超精细结构与磁共振现象。实验通过 $\sigma^+$ 圆偏振的 $D_1$ 光将铷原子“抽运”至基态极高磁量子数能级，建立了非热平衡的粒子数偏极化状态。利用零磁场下能级简并导致的偏极化破坏效应，采用扫场法精确测定了实验室环境地磁场（垂直分量 $6.99 \times 10^{-5}\ \mathrm{T}$，水平分量 $3.0 \times 10^{-5}\ \mathrm{T}$）。在此基础上，施加 $615.3\ \mathrm{kHz}$ 射频场，观测到了 $\RbEightyFive$ 和 $\RbEightySeven$ 破坏偏极化状态所产生的磁共振信号。通过对称测量法消除地磁场影响，测得 $\RbEightyFive$ 和 $\RbEightySeven$ 的朗德 $g_F$ 因子分别为 $0.338$ 和 $0.510$，与理论值（$1/3$ 和 $1/2$）吻合良好。实验结果不仅验证了光抽运作为一种“选态”和“检态”手段的高灵敏度，也直观展示了角动量守恒在光-原子相互作用中的核心地位。
+
 
 %%%%%%%%英文标题、作者、摘要、关键词
 \emptitleEn{Optical Pumping and Magnetic Resonance}
-\empauthorEn{Your Name}{Your Student ID}
-\KeywordEn{Optical Pumping, Magnetic Resonance, Zeeman Splitting, Landé g-factor, Geomagnetic Field}
+\empauthorEn{Chi Wang}{Xiufeng Wang}
+\KeywordEn{Optical Pumping, Magnetic Resonance, Hyperfine Structure, Zeeman Splitting, Landé g-factor, Geomagnetic Field}
 
 \begin{empAbstractEn}
-In this experiment, optical pumping technology was employed to achieve population polarization of Rubidium (Rb) atoms in ground state Zeeman sublevels through the interaction with circularly polarized $D_1$ light. 
-The optical pumping signals were successfully observed. 
-By adjusting the compensation magnetic fields in both horizontal and vertical directions to cancel the geomagnetic field, the relationship between the optical pumping signal intensity and the magnetic field was measured and analyzed, allowing for the determination of the vertical and horizontal components of the geomagnetic field. 
-Subsequently, a radio-frequency (RF) field of $600\ \mathrm{kHz}$ was applied. 
-When the magnetic resonance condition was met, transitions between Zeeman sublevels were induced, destroying the polarization state and producing magnetic resonance signals. 
-Using the field-sweeping method, the resonance magnetic fields for $\RbEightyFive$ and $\RbEightySeven$ isotopes were precisely measured. 
-The calculated Landé $g_F$ factors were $0.334$ and $0.501$ respectively (Fill in your data), which agreed well with theoretical values. 
-The results vividly demonstrate the quantum nature of light-atom interactions and the high sensitivity of optical detection techniques for weak signals.
+Based on the optical pumping principle proposed by Alfred Kastler, this experiment investigates the hyperfine structure and magnetic resonance of Rubidium (Rb) atoms by exploiting the angular momentum exchange between circularly polarized light and atoms.
+Using $\sigma^+$ circularly polarized $D_1$ light, Rb atoms were "pumped" to the ground state sublevel with the highest magnetic quantum number, establishing a non-thermal population polarization.
+Utilizing the depolarization effect caused by level degeneracy near zero magnetic field, the geomagnetic field was precisely measured (Vertical: $6.99 \times 10^{-5}\ \mathrm{T}$, Horizontal: $3.0 \times 10^{-5}\ \mathrm{T}$).
+Furthermore, magnetic resonance signals corresponding to the depolarization of $\RbEightyFive$ and $\RbEightySeven$ were observed under a $615.3\ \mathrm{kHz}$ RF field.
+By employing a symmetric measurement method, the Landé $g_F$ factors were determined to be $0.338$ and $0.510$, respectively, showing excellent agreement with theory ($1/3$ and $1/2$, respectively).
+The results not only verify the high sensitivity of optical pumping as a state-selection and detection technique but also demonstrate the central role of angular momentum conservation in light-atom interactions.
 \end{empAbstractEn}
 
 %%%%%%%%首页角注
-\empfirstfoot{2025-xx-xx}{2025-xx-xx}{你的学号}{你的邮箱}
+\empfirstfoot{2025-10-30}{2026-01-03}{2022012259}{chi-wang22@mails.tsinghua.edu.cn}
 \end{@twocolumnfalse}
 ]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  正文由此开始
 \wuhao 
- 
-\section{引言}
-在物理学研究中，为了克服传统光谱学方法受限于仪器分辨率和多普勒展宽的问题，波谱学方法应运而生。然而，对于气态原子而言，由于样品浓度低，热平衡下能级粒子布居数差极小，导致共振信号微弱。20 世纪 50 年代，Kastler 等人提出了光抽运（Optical Pumping）概念，利用圆偏振光打破原子的玻尔兹曼热平衡分布，造成极大的布居数差，并结合“光探测”技术，极大地提高了探测灵敏度。
 
-本实验旨在通过光泵磁共振实验系统，研究铷原子的能级结构及塞曼分裂现象，掌握光抽运和光探测的基本原理，并利用磁共振技术测量铷同位素的朗德 $g_F$ 因子及实验室环境的地磁场。
+\enlargethispage{-2.0cm}
+ 
+% \section{引言}
+% 在物理学研究中，为了克服传统光谱学方法受限于仪器分辨率和多普勒展宽的问题，波谱学方法应运而生。然而，对于气态原子而言，由于样品浓度低，热平衡下能级粒子布居数差极小，导致共振信号微弱。20 世纪 50 年代，Kastler 等人提出了光抽运（Optical Pumping）概念，利用圆偏振光打破原子的玻尔兹曼热平衡分布，造成极大的布居数差，并结合“光探测”技术，极大地提高了探测灵敏度。
+
+% 本实验旨在通过光泵磁共振实验系统，研究铷原子的能级结构及塞曼分裂现象，掌握光抽运和光探测的基本原理，并利用磁共振技术测量铷同位素的朗德 $g_F$ 因子及实验室环境的地磁场。
+
+% 基于原始文献更新。
+
+\section{引言}
+研究原子能级精细结构与超精细结构的传统方法（如发射光谱法）受限于多普勒增宽，分辨率有限。20 世纪 30 年代，I. I. Rabi 发明了分子束磁共振法，利用非均匀磁场进行原子态的选择和分析，极大地提高了测量精度\cite{rabiMolecularBeamResonance1939}。然而，该方法难以应用于稀薄气体。
+
+1950 年，Alfred Kastler 在其奠基性论文中提出了“光抽运”（Optical Pumping）的概念 \cite{kastlerQuelquesSuggestionsConcernant1950}。他指出，利用圆偏振光照射原子，可以将光子的角动量单向传递给原子，打破原子在塞曼子能级上的玻尔兹曼热平衡分布，实现粒子数的“偏极化”。Kastler 进一步提出，利用偏极化状态对光吸收特性的改变，可以用光学手段替代 Rabi 装置中的非均匀磁场进行信号检测。这一“光抽运-光探测”技术将探测灵敏度提高了几个数量级，使得在稀薄气室中研究原子的磁共振成为可能。Kastler 因此获得了 1966 年诺贝尔物理学奖。\cite{kastlerOpticalMethodsStudying1967}
+
+本实验即基于上述原理，利用光泵磁共振系统研究铷原子的超精细结构。实验将通过光抽运建立铷原子的宏观磁矩，并利用磁共振技术破坏这种有序状态，从而精确测量铷同位素的朗德 $g_F$ 因子及地磁场参数。
 
 \section{实验仪器}
 
@@ -68,7 +82,7 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
     \includegraphics[width=0.9\linewidth]{Report/apparatus.png}
     \captionnamefont{\wuhao\bf\heiti}
     \captiontitlefont{\wuhao\bf\heiti}
-    \caption{光泵磁共振实验光路及装置示意图}
+    \caption{光泵磁共振实验光路及装置示意图\cite{GeWeiKunGuangBengCiGongZhenShiYan2020}}
     \label{fig:setup}
 \end{figure}
 
@@ -88,7 +102,7 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
 
 本部分实验将实现光抽运过程，实现样品中铷原子的偏极化，并且借助于光抽运过程对外部磁场的响应，准确测定地磁场的强度。
 
-\subsubsection{\texorpdfstring{$\RbEightyFive, \RbEightySeven$原子的精细结构与超精细结构能级}{Rb85, Rb87原子的精细结构与超精细结构能级}}
+\subsubsection{\texorpdfstring{$\Rb$原子的精细结构与超精细结构能级}{Rb原子的精细结构与超精细结构能级}}
 
 % 精细结构
 
@@ -105,7 +119,7 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
 
 % 超精细结构
 
-\begin{figure*}
+\begin{figure*}[htbp]
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
@@ -122,7 +136,7 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
     \end{subfigure}
     \captionnamefont{\wuhao\bf\heiti}
     \captiontitlefont{\wuhao\bf\heiti}
-    \caption{$\RbEightyFive, \RbEightySeven$原子的超精细结构能级示意图}
+    \caption{$\RbEightyFive, \RbEightySeven$原子的超精细结构能级示意图\cite{GeWeiKunGuangBengCiGongZhenShiYan2020}}
     \label{fig:rb_hyperfine}
 \end{figure*}
 
@@ -130,11 +144,13 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
 
 \subsubsection{光抽运过程}
 
-源自铷灯的$D_1$线光，若仅从能级间隔看，能够诱导 $ \RbEightyFive $, $ \RbEightySeven $ 从$\fineFiveS$的各个超精细结构能级到$\fineFiveP$的各个超精细结构能级的跃迁，受到激发的$\Rb$原子随后发生自发辐射。通过反复激发与辐射，这些原子原则上可去到所有的超精细结构子态。
+光抽运的本质是光子向原子的角动量传递过程。根据选择定则，原子吸收一个 $\sigma^+$ 圆偏振光子（角动量投影 $+1\hbar$），其磁量子数必须满足 $\Delta m_F = +1$。
 
-在本实验中进行光抽运时，入射光被制备为具有$\sigma^+$圆偏振；此时经电偶极跃迁发生的激发过程均满足$\Delta m_F=+1$，而相应发生的自发辐射过程总满足$\Delta m_F=0,\pm1$，其整体效果是使得原子在反复激发与辐射过程中$m_F$始终不递减。
+在本实验中，入射的 $D_1$ 线 $\sigma^+$ 光不断将处于较低 $m_F$ 能级的原子激发至激发态 $\fineFiveP$。处于激发态的原子通过自发辐射返回基态 $\fineFiveS$，这一过程遵循 $\Delta m_F = 0, \pm 1$ 的统计规律。经过多次“吸收-辐射”循环，原子的 $m_F$ 值总体呈增加趋势。
 
-对于$\RbEightyFive$原子，使用$D_1$线的$\sigma^+$光进行激发时，若其所处状态为$\fineFiveS$的$F=3, m_F=+3$态，由于$\fineFiveP$的各个超精细结构子态中不具备$m_F \ge 4$的态，因此该原子无法被激发到$\fineFiveP$内的超精细结构子态；并且，$\fineFiveS$内部的跃迁也无法通过电偶极跃迁实现。与此同时，处在$\fineFiveS$其他子态的原子仍然可能通过激发和辐射过程演化到$\fineFiveS$的$F=3, m_F=+2$态。如此的效果便是，这些原子均被制备到$\fineFiveS$的$F=3, m_F=+2$态，实现了原子在基态塞曼子能级上的粒子数偏极化。这一过程也即光抽运。
+以 $\RbEightySeven$ ($I=3/2$) 为例，基态 $\fineFiveS$ 的 $F=2$ 能级拥有 $m_F = -2, \dots, +2$ 五个子能级。当原子最终积聚在 $F=2, m_F=+2$ 这一“暗态”时，由于激发态 $\fineFiveP$ 中不存在 $m_F=+3$ 的能级，且 $D_1$ 线不包含 $F=2 \to F'=3$ 的跃迁（$5^2P_{1/2}$ 最大 $F'=2$），原子无法再吸收 $\sigma^+$ 光子。
+
+最终，大量原子堆积在 $m_F$ 最大的子能级上，实现了电子自旋的取向排列（偏极化）。此时样品对光的吸收达到饱和，透射光强达到最大。
 
 对于$\RbEightySeven$原子，类似地使用$D_1$线的$\sigma^+$光进行激发时，由于$\fineFiveP$对应的超精细结构子态之中不存在$m_F \ge 3$的态，因此最终会使得原子被抽运到$\fineFiveS$的$F=2, m_F=+2$态。
 
@@ -142,13 +158,11 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
 
 \subsubsection{光抽运信号的形成}
 
-在一般热平衡状态中，铷原子各个塞曼子能级的粒子数分布是大致均匀的，给定时刻，$\RbEightyFive$中的$7/8$以及$\RbEightySeven$中的$3/4$原子均可吸收入射的$D_1$线$\sigma^+$光，发生能级跃迁并散射入射光，导致透光率较低。随后粒子被逐渐抽运至$\fineFiveS$的$F=3, m_F=+2$态，样品对光吸收将会下降，透光率逐渐提高。在偏极化制备达到饱和之后，原子原则上无法再吸收$D_1$线的$\sigma^+$光，相应不再散射入射光，透光率保持在较高水平。
-
-此时，若令水平磁场由一定值连续变化为零再到反向，铷原子各个塞曼子能级将重新发生简并和分裂，碰撞等过程将使之发生自旋方向混杂，失去偏极化。此时原子重新能够吸收入射光，散射光强度增加，透光率下降。直至外加磁场引起塞曼子能级的充分劈裂之后，光抽运过程重新开始，样品透光率重新上升。如此即形成了实验所见的光抽运信号。
+在偏极化制备达到饱和之后，原子原则上无法再吸收$D_1$线的$\sigma^+$光，相应不再散射入射光，透光率保持在较高水平。此时，若令水平磁场由一定值连续变化为零再到反向或改变入射光偏振，铷原子各个塞曼子能级将重新发生简并和分裂，碰撞等过程将使之发生自旋方向混杂，失去偏极化。\cite{kastlerQuelquesSuggestionsConcernant1950}此时原子重新能够吸收入射光，散射光强度增加，透光率下降。直至外加磁场引起塞曼子能级的充分劈裂之后，光抽运过程重新开始，样品透光率重新上升。如此即形成了实验所见的光抽运信号。
 
 \subsubsection{光抽运信号的观察与地磁场测量}
 
-实验操作中，首先利用指南针确认实验光路方向与地磁场方向在同一竖直平面内，对实验装置中各个励磁电流开关对应的磁场分量正方向进行确定。随后，设置水平扫场设置为方波调制，调节 $\lambda/4$ 波片的光轴角度，直至在示波器上观察到幅度最大的光抽运信号，此时入射光为最佳的$\sigma^+$圆偏振状态。随后调节垂直线圈电流 $I_{\perp}$，抵消地磁场竖直分量对光抽运信号的影响：测量并记录光抽运信号峰-峰值 $U_{pp}$ 随 $I_{\perp}$ 变化的数据； $U_{pp}$ 最大，也即光抽运信号最强时，对应于垂直线圈电流 $I_{\perp}$ 产生的磁场完全抵消地磁场的竖直分量，总磁场最接近零，原子偏极化被破坏得最彻底（在过零点）。此后直至实验结束，垂直线圈电流保持不变。
+实验操作中，首先利用指南针确认实验光路方向与地磁场方向在同一竖直平面内，对实验装置中各个励磁电流开关对应的磁场分量正方向进行确定。随后，设置水平扫场设置为方波调制，调节 $\lambda/4$ 波片的光轴角度，直至在示波器上观察到幅度最大的光抽运信号，此时入射光为最佳的$\sigma^+$圆偏振状态。随后调节垂直线圈电流 $I_{\perp}$，抵消地磁场竖直分量对光抽运信号的影响：测量并记录光抽运信号峰-峰值 $U_{pp}$ 随 $I_{\perp}$ 变化的数据；$U_{pp}$ 最大，也即光抽运信号最强时，对应于垂直线圈电流 $I_{\perp}$ 产生的磁场完全抵消地磁场的竖直分量，总磁场最接近零，原子偏极化被破坏得最彻底（在过零点）。此后直至实验结束，垂直线圈电流保持不变。
 
 通过此时的垂直线圈电流 $I_{\perp,0}$ ，还可利用亥姆霍兹线圈中心磁感应强度公式给出地磁场竖直分量：
 
@@ -156,7 +170,7 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
     B_{e\perp} = \frac{32\pi}{5^{3/2}}\frac{N}{r}I_{\perp,0} \times 10^{-7}
 \end{equation}
 
-\begin{figure}
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\linewidth]{Report/fig-4-pumping.png}
     \captionnamefont{\wuhao\bf\heiti}
@@ -165,7 +179,7 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
     \label{fig:reversal_method}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\linewidth]{Report/fig-5-pumping-sweep-square.png}
     \captionnamefont{\wuhao\bf\heiti}
@@ -174,7 +188,7 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
     \label{fig:sweep_square}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\linewidth]{Report/fig-6-pumping-sweep-triangle.png}
     \captionnamefont{\wuhao\bf\heiti}
@@ -183,9 +197,11 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
     \label{fig:sweep_triangle}
 \end{figure}
 
-在抵消竖直磁场后，在如图\ref{fig:reversal_method}展示的三种情形中，调整水平线圈电流以及扫场信号方向，并测量光信号强度 $U_{pp}$ 随水平线圈电流 $I_{\parallel}$ 变化的关系。这一过程中，先后方波和三角波信号作为扫场信号，光抽运信号将分别历经图\ref{fig:sweep_square}和图\ref{fig:sweep_triangle}之中展示的(a), (b), (c)三种状态；这些状态对应的水平线圈电流将反映出地磁场水平分量以及扫场信号的交直流分量信息。
+在抵消竖直磁场后，在如图\ref{fig:reversal_method}展示的三种情形中，调整水平线圈电流以及扫场信号方向，并测量光信号强度 $U_{pp}$ 随水平线圈电流 $I_{\parallel}$ 变化的关系。这一过程中，先后使用方波和三角波信号作为扫场信号，将观察到光抽运信号演化至图\ref{fig:sweep_square}和图\ref{fig:sweep_triangle}之中展示的各种形态。在这些波形中已经标记出了“磁场过零点”对应的时刻：光电池接收到的光强突减，随后逐渐回升。其中，波形(b)对应于，扫场信号直流部分与水平线圈电流产生的磁场恰好抵消地磁场，波形(a)(c)则对应于扫场信号的交流部分瞬时值绝对值最大时，扫场信号与水平线圈电流产生的磁场恰好抵消地磁场。
 
-\subsection{磁共振信号的观察与 $g_F$ 因子测量}
+综合不同磁场配置下各个波形出现时的电流，即可求解得到地磁场水平方向分量以及扫场信号的交直流分量。
+
+\subsection{\texorpdfstring{磁共振信号的观察与$g_F$因子测量}{磁共振信号的观察与g_F因子测量}}
 
 \subsubsection{\texorpdfstring{$\RbEightyFive, \RbEightySeven$原子在各超精细结构能级的磁矩与}{Rb-85, Rb-87原子在各超精细结构能级的磁矩}}    
 
@@ -200,7 +216,7 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
 
 其中 $g_J$ 为朗德 $g$ 因子，$J, L, S$ 为相对应的量子数。
 
-再考虑核自旋引入的自旋-自旋耦合：磁矩的大小与$Ze\hbar/m_N$相当，其中$m_N$为原子核质量，$Z$为原子序数；可以看出核自旋磁矩与电子磁矩大小的比值应当与电子与核质量之比$m_e/m_N\sim 10^{-3}$相当，因而最终看到的总磁矩应当为$\vec{\mu_J}$在$F$方向上的投影，并给出：
+再考虑核自旋引入的自旋-自旋耦合：磁矩的大小与$Ze\hbar/m_N$相当，其中$m_N$为原子核质量，$Z$为原子序数；可以看出核自旋磁矩与电子磁矩大小的比值应当与电子与核质量之比$m_e/m_N\sim 10^{-3}$相当，因而最终看到的总磁矩近似为$\vec{\mu_J}$在$F$方向上的投影，可给出：
 
 \begin{equation}
     \vec{\mu_F} = -g_F\frac{e}{2m_e} \vec{F}
@@ -235,6 +251,7 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
         =
     &
         \frac{1}{3}
+    \label{eq:gf_rb_85}
 \end{align}
 \begin{align}
     &
@@ -247,6 +264,7 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
         =
     &
         \frac{1}{2}
+    \label{eq:gf_rb_87}
 \end{align}
 
 \subsubsection{磁共振信号的观察}
@@ -264,6 +282,7 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
 
 \begin{equation}
     B = \frac{16\pi}{5^{3/2}}\frac{N}{r}I \times 10^{-7}
+    \label{eq:helmholtz_field_horizontal}
 \end{equation}
 
 进而确定实际发生共振时的总磁场 $B$，进一步给出朗德 $g_F$ 因子。
@@ -271,11 +290,13 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
 为处理地磁场以及扫场信号直流分量的影响，实验中借助图\ref{fig:reversal_method}所示磁场配置(a), (b), (c)进行测量。具体地，发生磁共振时，有以下条件成立：
 
 \begin{equation}
-    \begin{cases}
-        h\nu &= g_F \mu_B (B_{\parallel, a} + B_{e\parallel} + B_s) \\
-        h\nu &= g_F \mu_B (B_{\parallel, b} - B_{e\parallel} - B_s) \\
-        h\nu &= g_F \mu_B (B_{\parallel, c} - B_{e\parallel} + B_s)
-    \end{cases}
+    \left\{
+        \begin{array}{ll}
+            h\nu = g_F \mu_B (B_{\parallel, a} + B_{e\parallel} + B_s) \\
+            h\nu = g_F \mu_B (B_{\parallel, b} - B_{e\parallel} - B_s) \\
+            h\nu = g_F \mu_B (B_{\parallel, c} - B_{e\parallel} + B_s)
+        \end{array}
+    \right.
     \label{eq:mr_conditions}
 \end{equation}
 
@@ -287,7 +308,7 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
 
 \subsubsection{地磁场竖直分量测量}
 
-\begin{figure}
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\linewidth]{Data/01-optical-pump/optic_pump_mr_data_03_vertical_field.pdf}
     \captionnamefont{\wuhao\bf\heiti}
@@ -298,10 +319,11 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
 
 实验测量了光抽运信号峰-峰值 $U_{pp}$ 随垂直线圈电流 $I_{\perp}$ 的变化，结果如图\ref{fig:optic_pump_vertical}所示。
 
-由图可见，当 $I_{\perp} \approx 0.119\ \mathrm{A}$ 时，信号达到最大值。这表明此时线圈产生的磁场 $B_{\perp}$ 与地磁场竖直分量 $B_{e\perp}$ 大小相等、方向相反。根据线圈参数计算可得地磁场竖直分量：
+由图可见，当 $I_{\perp} \approx 0.119\ \mathrm{A}$ 时，信号达到最大值。这表明此时线圈产生的磁场 $B_{\perp}$ 与地磁场竖直分量 $B_{e\perp}$ 大小相等、方向相反。根据线圈参数计算可得地磁场竖直分量（已经代入$\mu_0 \approx 4\pi \times 10^{-7} \ \text{T}\cdot\text{A}^{-1}\cdot{m}$）：
 
 \begin{equation}
     B_{e\perp} = B_{\text{coil}} = \frac{32\pi}{5^{3/2}}\frac{N}{r} I_{\text{peak}} \times 10^{-7} \approx 6.99 \times 10^{-5} \ \mathrm{T}
+    \label{eq:earth_field_vertical}
 \end{equation}
 
 \subsubsection{水平方向磁场关系}
@@ -328,17 +350,155 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
         \subcaption{扫场反向且水平磁场反向}
         \label{fig:optic_pump_horizontal_c}
     \end{subfigure}
+    \captionnamefont{\wuhao\bf\heiti}
+    \captiontitlefont{\wuhao\bf\heiti}
+    \caption{各磁场配置下光抽运信号峰-峰值 $U_{pp}$ 随水平线圈电流 $I_{\parallel}$ 的变化图}
     \label{fig:optic_pump_horizontal}
 \end{figure*}
 
-在固定垂直电流后，改变水平线圈电流 $I_{\parallel}$，分别在图\ref{fig:reversal_method}(a, b, c) 三种磁场配置下测量光抽运信号峰-峰值 $U_{pp}$ 随垂直电流 $I_{\perp}$ 的变化，结果如图\ref{fig:optic_pump_horizontal}所示。
+在固定垂直电流后，改变水平线圈电流 $I_{\parallel}$，分别在图\ref{fig:reversal_method}(a, b, c) 三种磁场配置下测量光抽运信号峰-峰值 $U_{pp}$ 随水平线圈电流 $I_{\parallel}$ 的变化，结果如图\ref{fig:optic_pump_horizontal}所示。这里使用的水平线圈磁场满足关系（已经代入$\mu_0 \approx 4\pi \times 10^{-7} \ \text{T}\cdot\text{A}^{-1}\cdot{m}$）：
 
-其中，扫场、水平磁场均与地磁场方向一致时，如图\ref{fig:optic_pump_horizontal}(\subref{fig:optic_pump_horizontal_a})所示，信号强度随水平电流的增加而单调降低，不出现透射峰；而在图\ref{fig:optic_pump_horizontal}(\subref{fig:optic_pump_horizontal_b})所示的构型中，扫场与水平磁场方向相反，信号强度则先增大后减小，出现透射峰；
+\begin{equation}
+    B_{\parallel} = \frac{16\pi}{5^{3/2}}\frac{N}{r} I \times 10^{-7}
+\end{equation}
 
-\subsection{磁共振及 $g_F$ 因子测量}
+接下来简记
 
-\section{结论}
-本实验成功搭建了光泵磁共振系统，通过调节圆偏振光和补偿磁场，清晰地观测到了铷原子的光抽运信号。通过研究信号随磁场的变化，定量测量了实验室环境的地磁场竖直分量。利用磁共振技术，在 $600\ \mathrm{kHz}$ 射频场下观测到了 $\RbEightySeven$ 和 $\RbEightyFive$ 的塞曼子能级跃迁信号。通过消除地磁场影响的对称测量法，测得两同位素的朗德因子分别为 $0.501$ 和 $0.334$（填入实测值），相对误差均在允许范围内。实验深刻揭示了光抽运建立粒子数反转及磁共振破坏反转的物理机制。
+\begin{equation}
+    B_{\parallel} = kI, k \approx 4.664 \times 10^{-4} \ \text{T}\cdot\text{A}^{-1}
+\end{equation}
+
+在上述三种测量配置中，仅有(b)和(c)这两种配置能够观察到形如图\ref{fig:sweep_square}(b)所示的信号。这是符合预期的：图\ref{fig:sweep_square}(b)的信号出现，实际是要求扫场信号的直流成分与水平线圈电流产生的磁场恰好抵消地磁场，这在配置(a)当中是不可能达成的。
+
+% 配置情况（2列）波形对应电流（1列下来3小列）
+
+\begin{table*}[htbp]
+    \centering
+    \captionnamefont{\wuhao\bf\heiti}
+    \captiontitlefont{\wuhao\bf\heiti}
+    \caption{各磁场配置下图\ref{fig:sweep_square}(a)(b)(c)各个波形对应电流测量结果表}
+    \begin{tabular}{ccccc}
+        \toprule
+        水平线圈 & \multirow{2}{*}{扫场信号方向} & \multicolumn{3}{c}{光抽运信号波形(a),(b),(c)对应的电流} \\
+        电流方向 & & $I_{\parallel, a}/\ \text{A}$ & $I_{\parallel, b}/\ \text{A}$ & $I_{\parallel, c}/\ \text{A}$ \\ 
+        \midrule
+        \multirow{2}{*}{反向} & 正向 & 0.017 & 0.033 & 0.049 \\
+        \cline{2-5}
+        & 反向 & 0.081 & 0.097 & 0.113 \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:optic_pump_square_waveforms}
+\end{table*}
+
+在方波信号中，记录余下两种磁场配置中(a),(b),(c)波形对应的水平线圈电流值如表\ref{tab:optic_pump_square_waveforms}。设扫场信号电流的直流分量为 $I_{S, DC}$，交流分量峰-峰值为 $I_{S,pp}$ ，给出（区分起见，凡是扫场信号取反向的，水平线圈电流用 $I_{\parallel}'$ 表示）：
+
+\begin{equation}
+    \left\{ 
+        \begin{array}{l}
+            B_{e,\parallel} = kI_{\parallel, a}  - k(I_{S, DC} - \frac{1}{2}I_{S, pp}) \\
+            B_{e,\parallel} = kI_{\parallel, b}  - kI_{S, DC} \\
+            B_{e,\parallel} = kI_{\parallel, c}  - k(I_{S, DC} + \frac{1}{2}I_{S, pp}) \\
+            B_{e,\parallel} = kI_{\parallel, a}' + k(I_{S, DC} - \frac{1}{2}I_{S, pp}) \\
+            B_{e,\parallel} = kI_{\parallel, b}' + kI_{S, DC} \\
+            B_{e,\parallel} = kI_{\parallel, c}' + k(I_{S, DC} + \frac{1}{2}I_{S, pp})
+        \end{array} 
+    \right.
+    \label{eq:optic_pump_square_waveforms}
+\end{equation}
+
+这个方程组中独立方程数目多于变元，原则上应使用最小二乘法求解；但在本实验精度范围内，有以下解：
+
+\begin{equation}
+    \left\{ 
+        \begin{array}{l}
+            B_{e,\parallel} / k = 0.065\ \text{A} \\
+            I_{S,DC} = 0.032\ \text{A} \\
+            I_{S,pp} = 0.032\ \text{A}
+        \end{array} 
+    \right.
+\end{equation}
+
+\begin{table*}[htbp]
+    \centering
+    \captionnamefont{\wuhao\bf\heiti}
+    \captiontitlefont{\wuhao\bf\heiti}
+    \caption{各磁场配置下图\ref{fig:sweep_triangle}(a)(b)(c)各个波形对应电流测量结果表}
+    \begin{tabular}{ccccc}
+        \toprule
+        水平线圈 & \multirow{2}{*}{扫场信号方向} & \multicolumn{3}{c}{光抽运信号波形(a),(b),(c)对应的电流} \\
+        电流方向 & & $I_{\parallel, a}/\ \text{A}$ & $I_{\parallel, b}/\ \text{A}$ & $I_{\parallel, c}/\ \text{A}$ \\ 
+        \midrule
+        \multirow{2}{*}{反向} & 正向 & （未测量） & 0.022 & （未测量） \\
+        \cline{2-5}
+        & 反向 & （未测量） & 0.107 & （未测量） \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:optic_pump_triangle_waveforms}
+\end{table*}
+
+改为使用三角波扫场信号，给出测量结果如表\ref{tab:optic_pump_triangle_waveforms}，可直接从$I_{\parallel,b}$得到以下结果：
+
+\begin{equation}
+    \left\{ 
+        \begin{array}{l}
+            B_{e,\parallel} / k = 0.065\ \text{A} \\
+            I_{S,DC} = 0.043\ \text{A} \\
+        \end{array} 
+    \right.
+    \label{eq:optic_pump_triangle_waveforms}
+\end{equation}
+
+以上的结果测得的$B_{e,\parallel}/k$与方波扫场信号测得的结果一致。
+
+给出结果：
+
+\begin{equation}
+    B_{e,\parallel} = k \times \frac{B_{e,\parallel}}{k} = 3.0 \times 10^{-5}\ \mathrm{T}
+    \label{eq:earth_field_horizontal}
+\end{equation}
+
+\subsection{\texorpdfstring{磁共振及$g_F$因子测量}{磁共振及g_F因子测量}}
+
+本部分实验使用频率为$\nu = 615.3\ \mathrm{kHz}$的射频信号激发磁共振。事先根据磁共振发生的物理条件（式\ref{eq:mr_fundamental}）以及水平线圈特性（式\ref{eq:helmholtz_field_horizontal}），对$\RbEightyFive, \RbEightySeven$发生磁共振时水平线圈电流进行估计，再参考图\ref{fig:reversal_method}(a)(b)(c)布置进行测量，记录发生磁共振对应电流并匹配如下：
+
+\begin{table*}[htbp]
+    \centering
+    \captionnamefont{\wuhao\bf\heiti}
+    \captiontitlefont{\wuhao\bf\heiti}
+    \caption{磁共振对应电流测量结果表}
+    \label{tab:mr_currents}
+    \begin{tabular}{cccccc}
+        \toprule
+            \multirow{2}{*}{同位素} & 磁共振发生时 & \multicolumn{3}{c}{各磁场构型磁共振时对应电流} \\
+            & 水平线圈电流 $I_{\parallel,\text{MR},\text{th}} / \ \text{A}$ & $I_{\parallel,\text{MR}, \text{a}} / \ \text{A}$ & $I_{\parallel,\text{MR},\text{b}} / \ \text{A}$ & $I_{\parallel,\text{MR},\text{c}} / \ \text{A}$ \\
+        \midrule
+            $\RbEightyFive$  & 0.283 & 0.172 & 0.386 & 0.302 \\
+            $\RbEightySeven$ & 0.189 & 0.076 & 0.294 & 0.207 \\
+        \bottomrule
+    \end{tabular}
+\end{table*}
+
+结合式\ref{eq:mr_conditions}，联立方程组求解，给出如下结果：
+
+\begin{equation}
+    \left\{
+        \begin{array}{l}
+            g_{F,\text{exp}} \bigl[ \RbEightyFive,  \fineFiveS, F=3 \bigr] \approx 0.510 \\
+            g_{F,\text{exp}} \bigl[ \RbEightySeven, \fineFiveS, F=2 \bigr] \approx 0.338 \\
+            B_{e,\parallel} \approx 3.0 \times 10^{-5}\ \mathrm{T} \\
+            B_s \approx 2.0 \times 10^{-5}\ \mathrm{T}
+        \end{array}
+    \right.
+\end{equation}
+
+以上测量结果中，$g_{F,\text{exp}}$ 的值与此前式\ref{eq:gf_rb_85}和式\ref{eq:gf_rb_87}的理论值相符，地磁场水平分量测量值与此前通过光抽运信号测量所得值也能够吻合。
+
+\subsection{地磁场测量结果与文献报道的比较}
+
+中国科学院地质与地球物理研究所于2026年1月1日在北京站（北纬40.30度，东经116.19度）进行的地磁场测量结果为，地磁场水平分量值约为 $2.8 \times 10^{-5}\ \mathrm{T}$，竖直分量约为 $4.8 \times 10^{-5}\ \mathrm{T}$。\cite{geomagneticFieldData} 本实验测量结果与之相比较，可见水平分量测量结果基本符合，竖直分量相差较大。推断这一偏差的来源为物理楼地下楼层实验室仪器内强磁体引起的额外磁场。此外，当日在教学实验室内进行第一步校准时注意到，实验室内外指南针指向有较显著偏差，这提示教学实验室所在位置存在其他来源的磁场干扰。
+
+\section{结论与讨论}
+本实验成功搭建了光泵磁共振系统，通过调节圆偏振光和补偿磁场，清晰地观测到了铷原子的光抽运信号。通过研究信号随磁场的变化，定量测量了实验室环境的地磁场，确认水平分量与参考值接近而竖直分量可能受到其他磁场干扰源影响。利用磁共振技术，在 $615.3\ \mathrm{kHz}$ 射频场下观测到了 $\RbEightySeven$ 和 $\RbEightyFive$ 的塞曼子能级跃迁信号。通过消除地磁场影响的对称测量法，测得两同位素的朗德因子分别为 $0.510$ 和 $0.338$ ，与理论预期基本吻合。
 
 \renewcommand\refname{\heiti\wuhao\centerline{参考文献}\global\def\refname{参考文献}}
 \vskip 12pt
@@ -403,11 +563,11 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
 
 \subsubsection{光抽运信号强度与水平线圈电流的关系}
 
-参照图【】，本部分所述的“正向”与“反向”均为对应电流所产生磁场相对与地磁场水平分量的方向。
+参照图\ref{fig:reversal_method}，本部分所述的“正向”与“反向”均为对应电流所产生磁场相对与地磁场水平分量的方向。
 
 % Configuration a: sweep same, horizontal same.
 
-\begin{table}
+\begin{table}[htbp]
     \centering
     \captionnamefont{\wuhao\bf\heiti}
     \captiontitlefont{\wuhao\bf\heiti}
@@ -432,7 +592,7 @@ The results vividly demonstrate the quantum nature of light-atom interactions an
 
 % Configuration b: sweep same, horizontal reverse.
 
-\begin{table}
+\begin{table}[htbp]
     \centering
     \captionnamefont{\wuhao\bf\heiti}
     \captiontitlefont{\wuhao\bf\heiti}
